@@ -3,71 +3,100 @@
 
 /* Variables de colores */
 :root {
-    --main-color: #1e1e1e;  /* Negro grisáceo */
-    --text-color: #e0e0e0;  /* Gris claro para buen contraste */
-    --background-light: #121212;  /* Un fondo oscuro profundo */
-    --gradient-start: #3a3a3a;  /* Gris oscuro */
-    --gradient-end: #1f1f1f;  /* Casi negro, para un efecto de profundidad */
+    --main-color: #1e1e1e; /* Negro grisáceo */
+    --text-color: #e0e0e0; /* Gris claro para buen contraste */
+    --background-light: #121212; /* Un fondo oscuro profundo */
+    --gradient-start: #2c2c54; /* Azul oscuro profundo */
+    --gradient-end: #474787; /* Púrpura oscuro suave */
+    --card-bg: #1f1f1f; /* Fondo de las tarjetas */
+    --highlight-color: #b0b0b0; /* Gris claro para títulos */
 }
 
-/* Encabezado */
-header {
-    background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+body {
+    background-color: var(--background-light);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgb(24, 23, 23); /* Fondo negro */
     padding: 20px;
     text-align: center;
-    color: var(--text-color);
 }
 
-/* Estilos para el título */
-.logo-text {
+.nav-logo h2 {
+    color: #a463f2; /* Morado elegante */
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px rgba(164, 99, 242, 0.6); /* Brillo sutil */
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 32px;
-    font-weight: bold;
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    gap: 10px;
 }
 
-/* Imagen del logo */
-.logo-text img {
-    margin-right: 10px;
-    border-radius: 50%;
-    border: 2px solid white;
+.nav-logo img {
+    width: 40px; /* Ajusta el tamaño del icono */
+    height: auto;
+}
+
+.tipos-gatos {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+}
+
+.tipos-gatos li {
+    margin: 0 15px;
+}
+
+.tipos-gatos a {
+    text-decoration: none;
+    color: var(--highlight-color);
+    font-weight: bold;
+}
+
+.gatos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
 }
 
 .gato {
-    background: #1e1e1e; /* Fondo oscuro para mayor contraste */
-    color: #ffffff; /* Texto blanco */
+    background-color: var(--card-bg);
     padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
     text-align: center;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease-in-out;
 }
 
-.gato h2 {
-    font-size: 24px;
-    font-weight: 700;
-    color: #2c015a; /* Un color vibrante para destacar el título */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-.gato p {
-    font-size: 18px;
-    font-weight: 500;
-    color: #e0e0e0; /* Texto más claro para facilitar la lectura */
-}
-
-/* Efecto al pasar el mouse */
 .gato:hover {
     transform: scale(1.05);
 }
 
-.gato p {
-    font-size: 18px;
-    font-weight: 500;
-    color: #1b1a1a; /* Cambia esto por un tono más visible */
+.gato h2 {
+    color: var(--highlight-color);
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
-/* Reset y estilos generales */
+.gato p {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.gato img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
