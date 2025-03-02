@@ -1,11 +1,126 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KevinZorroYlinda</title>
+    <title>Tipos de Gatitos</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background: #f4a261;
+            padding: 20px;
+            color: white;
+            font-size: 24px;
+        }
+
+        /* Navegación */
+        nav {
+            margin: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Contenedor de gatos */
+        .gatos {
+            padding: 20px;
+        }
+
+        .gato {
+            margin: 50px 0;
+            padding: 20px;
+            background: #f4f4f4;
+            border-radius: 10px;
+            display: inline-block;
+            width: 80%;
+        }
+
+        .gato img {
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        /* Enlaces de navegación */
+        .tipos-gatos a {
+            text-decoration: none;
+            color: #0077cc;
+            font-weight: bold;
+        }
+
+        .tipos-gatos a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <header>
+        <h1>Tráfico de Gatitos</h1>
+    </header>
+
+    <nav>
+        <ul class="tipos-gatos">
+            <li><a href="#persa">Persa</a></li>
+            <li><a href="#siames">Siamés</a></li>
+            <li><a href="#somali">Somalí</a></li>
+            <li><a href="#siberiano">Siberiano</a></li>
+            <li><a href="#ragdoll">Ragdoll</a></li>
+        </ul>
+    </nav>
+
+    <section class="gatos">
+        <div id="persa" class="gato">
+            <h2>Gato Persa</h2>
+            <p>El gato persa es una raza elegante con un pelaje largo y esponjoso.</p>
+            <img src="https://placedog.net/200/200" alt="Gato Persa">
+        </div>
+
+        <div id="siames" class="gato">
+            <h2>Gato Siamés</h2>
+            <p>Los siameses son conocidos por su personalidad vocal y sus ojos azules brillantes.</p>
+            <img src="https://placedog.net/201/200" alt="Gato Siamés">
+        </div>
+
+        <div id="somali" class="gato">
+            <h2>Gato Somalí</h2>
+            <p>El gato somalí es una versión de pelo largo del abisinio, muy ágil y juguetón.</p>
+            <img src="https://placedog.net/202/200" alt="Gato Somalí">
+        </div>
+
+        <div id="siberiano" class="gato">
+            <h2>Gato Siberiano</h2>
+            <p>El siberiano es una raza fuerte y resistente con un hermoso pelaje denso.</p>
+            <img src="https://placedog.net/203/200" alt="Gato Siberiano">
+        </div>
+
+        <div id="ragdoll" class="gato">
+            <h2>Gato Ragdoll</h2>
+            <p>El ragdoll es famoso por su temperamento dócil y su tendencia a relajarse cuando lo sostienen.</p>
+            <img src="https://placedog.net/204/200" alt="Gato Ragdoll">
+        </div>
+    </section>
+
 </body>
 </html>
